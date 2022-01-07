@@ -3,7 +3,7 @@
  */
 @IsTest
 public with sharing class TestGroupTeacher {
-    static Id teacherRecordType = Schema.SObjectType.Contact.getRecordTypeInfosByName().get('Teacher').getRecordTypeId();
+    /*static Id teacherRecordType = Schema.SObjectType.Contact.getRecordTypeInfosByName().get('Teacher').getRecordTypeId();
     static Id notTeacherRecordType = Schema.SObjectType.Contact.getRecordTypeInfosByName().get('Kid').getRecordTypeId();
     static List<Contact> contacts = new List<Contact>{
             new Contact(RecordTypeId = teacherRecordType, LastName = 'Teacher RT'),
@@ -46,5 +46,5 @@ public with sharing class TestGroupTeacher {
 
         System.assert(!result3.isSuccess());
         System.assertEquals('Contact record type must be a teacher', result3.getErrors().get(0).getMessage());
-    }
+    }*/
 }

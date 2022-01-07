@@ -1,0 +1,34 @@
+<!--
+ - Created by Andrew on 07.01.2022.
+ -->
+
+<!-- Visit List Today -->
+<template>
+    <lightning-card title='Visits today'>
+        <div class="slds-border_bottom"></div>
+<!--        <lightning-datatable-->
+<!--                key-field="Id"-->
+<!--                data={visits.data}-->
+<!--                columns={columns}-->
+<!--                show-row-number-column="true"-->
+<!--                row-number-offset={rowOffset}-->
+<!--                hide-checkbox-column="true"-->
+<!--                onrowaction={handleRowAction}>-->
+<!--        </lightning-datatable>-->
+        <c-custom-data-table
+            key-field="Id"
+            data={visits.data}
+            columns={columns}
+            onvalueselect={handleSelection}
+            hide-checkbox-column>
+        </c-custom-data-table>
+<!--        <template for:each={visits.data} for:item="visit">-->
+<!--            <div key={visit.Id}>-->
+<!--                {visit.Id}-->
+<!--                {visit.Kid__c}-->
+<!--                {visit.Parent__c}-->
+<!--                {visit.CreatedDate}-->
+<!--            </div>-->
+<!--        </template>-->
+    </lightning-card>
+</template>

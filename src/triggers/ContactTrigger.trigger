@@ -2,8 +2,9 @@
  * Created by Andrew on 25.12.2021.
  */
 
-trigger GroupTrigger on Group__c (before insert, before update) {
-    GroupRelateTeacherHandler.handle(Trigger.new);
+trigger ContactTrigger on Contact (before insert, before update, after insert, after update) {
+
+    ContactTriggerHandler.handle(Trigger.new, Trigger.old, Trigger.newMap, Trigger.oldMap);
 //    GroupRelateTeacherHandler.checkTeacherPerGroupRule(Trigger.new);
 }
 

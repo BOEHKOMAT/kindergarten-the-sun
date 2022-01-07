@@ -1,0 +1,36 @@
+<!--
+ - Created by Andrew on 26.12.2021.
+ -->
+
+<!-- Kids List -->
+<template>
+    <lightning-card title='Group Info'>
+        <div class="slds-border_bottom"></div>
+        <lightning-datatable
+                key-field="Id"
+                data={kids.data}
+                columns={columns}
+                hide-checkbox-column="true"
+                onrowaction={handleRowAction}>
+        </lightning-datatable>
+
+        <!--<template if:true={teacher.data}>
+            <div class=slds-m-around_medium title='Teacher'>
+                <template for:each={teacher.data} for:item='teacher'>
+                    <c-kid key={teacher.Id} kid={teacher}></c-kid>
+                </template>
+            </div>
+        </template>
+        <div class="slds-border_bottom"></div>
+
+        <template if:true={kids.data}>
+            <div class=slds-m-around_medium>
+                <template for:each={kids.data} for:item='kid'>
+                                        <div  class="slds-p-bottom_xx-small">
+                    <c-kid key={kid.Id} kid={kid}></c-kid>
+                                        </div>
+                </template>
+            </div>
+        </template>-->
+    </lightning-card>
+</template>
