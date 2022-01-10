@@ -1,0 +1,41 @@
+<!--
+ - Created by Andrew on 09.01.2022.
+ -->
+
+<!-- Top Kids -->
+<template>
+    <lightning-card title="Top attendees">
+        <div class=slds-border_bottom>
+            <template if:true={topMonth.data}>
+                <div class=slds-m-around_medium ><i>of month:</i></div>
+                <template for:each={topMonth.data} for:item="value">
+                    <div class=slds-m-around_medium key={value.Id}>
+                        {value.LastName}
+                        {value.FirstName}
+                    </div>
+                </template>
+            </template>
+            <template if:false={topMonth.data}>
+                <div class=slds-m-around_medium>
+                    There isn't a top attendee of month yet!
+                </div>
+            </template>
+        </div>
+        <div class=slds-border_bottom>
+            <template if:true={topWeek.data}>
+                <div class=slds-m-around_medium><i>of week:</i></div>
+                <template for:each={topWeek.data} for:item="value">
+                    <div class=slds-m-around_medium key={value.Id}>
+                        {value.LastName}
+                        {value.FirstName}
+                    </div>
+                </template>
+            </template>
+            <template if:false={topWeek}>
+                <div class=slds-m-around_medium>
+                    There isn't a top attendee of week yet!
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

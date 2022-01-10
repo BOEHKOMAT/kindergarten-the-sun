@@ -1,0 +1,17 @@
+<!--
+ - Created by Andrew on 26.12.2021.
+ -->
+
+<!-- Kids List -->
+<template>
+    <lightning-card title='Group Info'>
+        <div class="slds-border_bottom"></div>
+        <lightning-datatable
+                key-field="Id"
+                data={kids.data}
+                columns={columns}
+                hide-checkbox-column="true"
+                onrowaction={handleRowAction}>
+        </lightning-datatable>
+    </lightning-card>
+</template>
