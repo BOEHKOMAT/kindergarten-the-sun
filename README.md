@@ -18,7 +18,7 @@ GitHub: https://github.com/BOEHKOMAT/kindergarten-the-sun/tree/master
 - Cases
 - Reports
 
-Основні сутності це Вчитель Дитина Батько (Teacher, Kid, Parent Record types of Contact).
+Основні сутності - це Вчитель Дитина Батько (Teacher, Kid, Parent Record types of Contact).
 
 *Teacher* - це Юзер з профілем та роллю Teacher і відповідним рекордом типу Teacher прив‘язаним до цього Юзера. До Юзера, за наявності, приєднується група вказана у його відповідному рекорді.
 *Kid* - це Дитина. Особливості: має поля Батька та Групи.
