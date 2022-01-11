@@ -3,9 +3,9 @@ Login: andriy.yarchak.20@creative-shark-ss3ocy.com
 Password:  kindergarten17
 GitHub: https://github.com/BOEHKOMAT/kindergarten-the-sun/tree/master
 
-Опис проекту: 
+**Опис проекту: **
 Згідно теми проекту створив:
-Ролі та Профайли:
+**Ролі та Профайли:**
 - Teacher
 - Manager
 Основні моделі об‘єктів:
